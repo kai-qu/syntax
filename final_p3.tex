@@ -1,0 +1,156 @@
+% Use this template to write your solutions
+
+\documentstyle[12pt]{article}
+
+% Set the margins
+%
+\setlength{\textheight}{8.5in}
+\setlength{\headheight}{.25in}
+\setlength{\headsep}{.25in}
+\setlength{\topmargin}{0in}
+\setlength{\textwidth}{6.5in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+
+% Macros
+\newcommand{\myN}{\hbox{N\hspace*{-.9em}I\hspace*{.4em}}}
+\newcommand{\myZ}{\hbox{Z}^+}
+\newcommand{\myR}{\hbox{R}}
+
+\newcommand{\myfunction}[3]
+{${#1} : {#2} \rightarrow {#3}$ }
+
+\newcommand{\myzrfunction}[1]
+{\myfunction{#1}{{\myZ}}{{\myR}}}
+
+
+% Formating Macros
+
+\newcommand{\myheader}[4]
+{\vspace*{-0.5in}
+\noindent
+{#1} \hfill {#3}
+
+\noindent
+{#2} \hfill {#4}
+
+\noindent
+\rule[8pt]{\textwidth}{1pt}
+
+\vspace{1ex} 
+}  % end \myheader 
+
+\newcommand{\myalgsheader}[0]
+{\myheader
+{ {\bf{COS 340}} }
+{ {\bf{Spring 2014}} }
+{ {\bf{Collaborator 1}} : None }
+{ {\bf{Collaborator 2}} : None }
+}
+
+% Running head (goes at top of each page, beginning with page 2.
+% Must precede by \pagestyle{myheadings}.
+\newcommand{\myrunninghead}[2]
+{\markright{{\it {#1}, {#2}}}}
+
+\newcommand{\myrunningalgshead}[2]
+{\myrunninghead{COS 340 }{{#1}}}
+
+\newcommand{\myrunninghwhead}[2]
+{\myrunningalgshead{Solution to HW {#1}, Problem {#2}}}
+
+\newcommand{\mytitle}[1]
+{\begin{center}
+{\large {\bf {#1}}}
+\end{center}}
+
+\newcommand{\myhwtitle}[3]
+{\begin{center}
+{\large {\bf Solution to HW {#1}, Problem {#2}}}\\
+\medskip 
+{\it {#3}} % Name goes here
+\end{center}}
+
+\newcommand{\mysection}[1]
+{\noindent {\bf {#1}}}
+
+%%%%%% Begin document with header and title %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\myalgsheader
+
+\pagestyle{plain}
+
+\myhwtitle{12}{3}{kye, Ye, Katherine}
+% Example : \myhwtitle{1}{4}{Your name here}
+
+\bigskip
+
+
+
+\hrulefill \\
+
+2a. This part not finished, but some partial work:\\
+
+From the LP: Adding the equations $x_{ij} \geq x_i - x_j$ and $x_{ij} \geq x_j - x_i$ implies that $x_{ij} \geq 0$. \\
+
+Combining the two equations, $x_{ij} \geq \max(x_j - x_i, x_i - x_j)$. Consider the various cases of $x_i \in S$ and $x_i \in \overline{S}$. \\
+
+Split the summation:\\
+
+$$\sum_{(i, j) \in E}y_{ij} = \sum_{(i, j) \in S}y_{ij} + \sum_{(i, j) \in \overline{S}}y_{ij} + \sum_{(i, j) \textrm{ between } S, \overline{S}}y_{ij}$$\\
+
+
+
+2b. The size of $S_t$ can be expressed as a sum of indicator variables. $|S_t| = \sum_i^n I_i$, where $I_i$ is the indicator variable that takes on value $1$ if $i \in S_i$ (that is, $y_i > t$) and 0 if $i \not\in S_i$.\\
+
+$E[|S_t|] = E[\sum_i^n I_i] = \sum_i^n E[I_i]$ (by linearity of expectation) $ = \sum_i^n Pr[I_i = 1]$ (by the definition of an indicator variable).\\
+
+$\sum_i^n Pr[I_i = 1] = \sum_i^n Pr[y_i > t] = \sum_i^n Pr[t < y_i]$.\\
+
+Assertion: $Pr[t < y_i] = y_i$.\\
+
+Consider $y_i$, which is given to be $\geq 0$ in the LP. It is also part of the optimal solution to the LP, which implies that $y_i \leq 1$. This is true because the LP's goal of minimizing $\sum_{(i, j) \in E}x_{ij}$ implies that it must minimize each $x_{ij}$ individually, since they do not depend on each other. By 2a, $x_{ij} \geq \max(x_j - x_i, x_i - x_j)$ which is minimized at $x_{ij} = \max(x_j - x_i, x_i - x_j)$. To minimize this maximum, it doesn't make sense to pick $y_i > 1$, since decreasing it to $< 1$ can still satisfy the constraints and minimize the maximum further. $y_i$ could equal one though, since $\sum_{i=1}^n x_i \geq 1$ is a condition.\\
+
+Thus, $y_i \in [0, 1]$. Consider it a constant. Then the probability that some uniformly-at-random picked $t \in [0, 1]$ is less than this constant is $\frac{y_i}{1}$ (interval length 1) = $y_i$. \\
+
+Thus, $E[|S_t|] = \sum_i^n Pr[t < y_i] = \sum_i^n y_i$\\
+
+2c. The approach is similar to 2b. \\
+
+$|Edges(S_t, \overline{S_t})| = \sum_{(i, j) \in E} I_{ij}$, where $I_{ij}$ is an indicator variable that takes on value $1$ if edge $ij$ is between $S_t$ and $\overline{S_t}$ and $0$ if it's not.\\
+
+$$E[|Edges(S_t, \overline{S_t})|] = E[\sum_{(i, j) \in E} I_{ij}] = \sum_{(i, j) \in E} E[I_{ij}] = \sum_{(i, j) \in E} Pr[I_{ij} = 1]$$
+
+$Pr[I_{ij} = 1]$ is the probability that the edge spans $S_t$ and $\overline{S_t}$, that is, either ($i \in S_t$ and $j \not\in S_t$) or ($i \in S_t$ and $j \not\in S_t$). ($V$ has been partitioned into the disjoint sets $S_t$ and $\overline{S_t}$.) Rewrite using the definition that $\{S_t = i | y_i > t \}$.
+
+$$Pr[I_{ij} = 1] = Pr[ (i \in S_t \cap j \not\in S_t) \cup (i \in S_t \cap j \not\in S_t)]$$
+$$= Pr[ (t < y_i \cap t \geq y_j) \cup (t \geq y_i \cap t < y_j)] $$
+
+The probabilities on either side of the $\cup$ are disjoint, since it's not possible for $t < y_i$ and $ t \geq y_i$, so they can be separated:
+
+$$= Pr[ (t < y_i \cap t \geq y_j)] + Pr [(t \geq y_i \cap t < y_j)] $$
+
+If $y_i = y_j$, then the expression becomes (W.L.O.G. pick $y_i$) $2 \cdot Pr[t = y_i]$.\\
+
+Otherwise, W.L.O.G. examine $y_i > y_j$. (The reverse case is symmetric.) Then one of the probabilities in the expression must be zero: $Pr[ (t < y_i \cap t \geq y_j)] = 0$, since $t$ can't be smaller than $c$ and larger than something else that is larger than $c$ simultaneously. So the probability is simply $Pr [(t \geq y_i \cap t < y_j)]$. By 2b, $t, y_i, y_j \in [0, 1]$, so the probability that $t$ (picked uniformly and at random) is between $y_i$ and $y_j$ is just $y_j - y_i$. (For the reverse case, it would be $y_i - y_j$.)\\
+
+Returning to the LP, by 2b and 2a, we have $x_{ij} \geq \max(x_j - x_i, x_i - x_j)$ which is minimized at $x_{ij} = \max(x_j - x_i, x_i - x_j) = y_{ij}$. This is exactly equal to \\$Pr[ (t < y_i \cap t \geq y_j)] + Pr [(t \geq y_i \cap t < y_j)] $, since the $\max$ takes the larger, non-negative quantity.\\
+
+Thus, 
+
+$$E[|Edges(S_t, \overline{S_t})|] = \sum_{(i, j) \in E} Pr[I_{ij} = 1] = \sum_{(i, j) \in E} y_{ij}$$
+
+2d. By part 2c, $E[|Edges(S_t, \overline{S_t})|] = \sum_{(i, j) \in E} y_{ij}$, implying that there exists some $t$ such that $|Edges(S_t, \overline{S_t})| \leq \sum_{(i, j) \in E} y_{ij}$. (By the definition of expected value, at least one input must result in an output that has the ``average'' value or lower. Otherwise nothing is below the average, and the average would be higher.) \\
+
+Also, since the sum of $x_i$ is $\geq 1$, there is some nonzero $x_i$, and hence some $y_i$ such that $y_i$ is greater than some $t$, so $S_t$ can be non-empty. $S_t \cap T = \emptyset$ implies that $|S_t| \geq 1$, since presumably $T \neq G$ and thus $S_t$ occupies some other vertices in $\overline{T}$. Thus, for some $t \in [0, 1]$,
+
+$$\frac{|Edges(S_t, \overline{S_t})|}{|S_t|} \leq \sum_{(i, j) \in E} y_{ij} = OPT_{LP}$$
+
+since the numerator is less than $\sum_{(i, j) \in E} y_{ij}$ and the denominator is $\geq 1$.
+
+
+% end Solution 
+
+\end{document}
