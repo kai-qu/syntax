@@ -19,10 +19,16 @@ Motivation:
 
 English language: I'm interested in mapping the silences.
 Code: The media often fetishizes the syntax of code. e.g. <b>, test;, obj.thing();
+  Programming is about much more than that.
 Math: I'm interested in the exotic kinds of notation that we define for abstractions.
 In general: I'm interested in the distinction between symbols and syntax,
   especially the unpronouncable. The symbol "beta" can be said right away.
   What about (<*>)? You can only say the names of the things that constitute it.
   I'd like to highlight and center the work of the syntax.
 
-Next up: synbols without syntax.
+It could be cool to challenge people to fill in the code or writing in between.
+
+The one of "Frankenstein" reminds me a lot of the paper rolls/metal disks on which
+music was originally transcribed.
+
+I wonder if different people have different syntactical signatures.
