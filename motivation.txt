@@ -9,6 +9,7 @@ Natural language: I'm interested in mapping the silences. Remove the text, and
 Code: Code gives people a unique opportunity to design their own syntax, and
   different languages can have very distinct signatures. Code is a designed language
   with a grammar, unlike (most) natural languages, which are organic.
+  I like the opportunity for recursion -- syntax-syntax.hs is syntax.hs run on itself.
   (The media often fetishizes the syntax of code. e.g. <b></b>, test;, obj.thing();)
 Math: I'm interested in the exotic kinds of notation that we define for abstractions.
 In general: I'm interested in the distinction between symbols and syntax,
