@@ -1,6 +1,8 @@
 syntax
 ======
 
+<img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/syntaxhs.png" />
+
 Experiments with syntax and symbols. The code in `syntax.hs` removes the symbols from various kinds of text. 
 For more explanation, see `motivation.txt`.
 
