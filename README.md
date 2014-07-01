@@ -6,6 +6,8 @@ syntax
 Experiments with syntax and symbols. The code in `syntax.hs` removes the symbols from various kinds of text. 
 For more explanation, see `motivation.txt`.
 
+**This is a WIP!** As you can see, the Haskell code is very simple. I'd like to write a PDF parser for math later.
+
 Usage: 
 `./syntax [your filenames here, multiple allowed]`
 If you change `syntax.hs`, recompile it with a Haskell compiler, e.g. `ghc syntax.hs`. I use the [Haskell platform for Mac OS X](https://www.haskell.org/platform/mac.html).
