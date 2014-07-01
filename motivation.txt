@@ -17,7 +17,7 @@ In general: I'm interested in the distinction between symbols and syntax,
   I'd like to highlight and center the work of the syntax.
 
 It could be cool to challenge people to fill in the code or writing inside
-the given syntax skeleton.
+the given syntax skeleton. (See texts image in folder, which is a friend's suggestion.)
 
 The one of "Frankenstein" reminds me a lot of the paper rolls/metal disks on which
 music was originally transcribed for music boxes.
@@ -39,3 +39,10 @@ effect that I'd never experienced before.
 Besides the subject of just syntax, I'm interested in different kinds of notation
 humans have invented. Right now I'm thinking about writing and literacy in general,
 Roman numerals vs. Arabic numerals, bra-ket notation, and juggling notation.
+
+I guess if you wanted to replicate this process, think about the invisible parts of the media 
+that you work in and how they interact with human design. :-)
+
+Tools used:
+
+Haskell compiler (GHC), Haskell language, emacs, LaTeX, git, fish shell, chalkboard
