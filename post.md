@@ -4,11 +4,11 @@ I recently wrote some code that would remove non-alphabetical characters from pl
 
 #### The code run on English prose:
 
-![](https://raw.githubusercontent.com/hypotext/syntax/master/images/whydoi.png)
+<img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/whydoi.png" width="400" >
 
 Note the em-dashes. Can you guess the author? Original text [here](https://github.com/hypotext/syntax/blob/master/examples/whydoi.txt).
 
-![](https://raw.githubusercontent.com/hypotext/syntax/master/images/frankenstein.png)
+<img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/frankenstein.png" width="400">
 
 The source and author for this one are probably impossible to guess. It's the beginning of _Frankenstein_ by Mary Shelley. (Original text [here](https://github.com/hypotext/syntax/blob/master/examples/frankenstein.txt).)
 
@@ -18,13 +18,13 @@ This reminds me a lot of the paper rolls and [metal disks](https://www.flickr.co
 
 #### The code run on code:
 
-![](https://raw.githubusercontent.com/hypotext/syntax/master/images/evolutionlisp.png)
+<img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/evolutionlisp.png" width="400" >
 
 If you're familiar with programming languages, you can probably tell that the example was written in Lisp. ([Source.](http://landoflisp.com/evolution.lisp)) I like this image because designing a programming language gives people a unique opportunity to design their own syntax and grammars, and different languages can have very distinct signatures. The media can be obsessed with code that looks a certain way, e.g. things that look like `<b>text</b>`, `x = 6;`, and `obj.verb(thing);` often appear in stock images.
 
 Code also gives us a great opportunity for recursion:
 
-![](https://raw.githubusercontent.com/hypotext/syntax/master/images/syntaxhs.png)
+<img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/syntaxhs.png" width="400" >
   
 This is the code (written in Haskell) run on itself. Can you guess how it works?
 
@@ -46,7 +46,7 @@ Process
 I was doing some linear algebra on a chalkboard with someone. Specifically, we were working
 with symmetric bilinear forms and inner products, which are very `<([bracket-heavy])>`. After they left, I wondered what would remain if I erased the symbols (e.g. x and y in `<x, y>`) on the chalkboard. This was in the beginning of May 2014. (I took a picture of it back then because I take pictures of everything.)
 
-![](https://raw.githubusercontent.com/hypotext/syntax/master/images/uncut_chelsey_minnis.png)
+<img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/uncut_chelsey_minnis.png" width="525" >
 
 I also came across an intriguing poem in a poetry class last winter: “Uncut” by Chelsey Minnis. I have mild synesthesia and experience written punctuation as soft internal sound and motion. Her use of ellipses to fill the page and displace space created an interesting droning static effect that I’d never experienced before.
 
@@ -57,6 +57,6 @@ I guess if you wanted to replicate this process, you could think about the invis
 Tools used:
 ----------
 
-Haskell compiler (GHC), Haskell language, emacs, Markdown, LaTeX, git, fish shell, chalkboard. (Lots of text editors!)
+Haskell language, Haskell compiler (GHC), emacs, Markdown, LaTeX, git, fish shell, chalkboard. (Lots of text editors!)
 
 The code, original texts, and commit history can be found in the [GitHub repo](https://github.com/hypotext/syntax).
