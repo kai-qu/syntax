@@ -47,7 +47,7 @@ with symmetric bilinear forms and inner products, which are very `<([bracket-hea
 
 <img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/uncut_chelsey_minnis.png" width="525" >
 
-I also came across an intriguing poem in a poetry class last winter: “Uncut” by Chelsey Minnis. I have mild synesthesia and experience written punctuation as soft internal sound and motion. Her use of ellipses to fill the page and displace space created an interesting droning static effect that I’d never experienced before.
+I also came across an intriguing poem in a poetry class last winter: “Uncut” by Chelsey Minnis. I have mild synesthesia and experience written punctuation as soft internal sound and motion. Her use of ellipsis to fill the page and displace space created an interesting droning static effect that I’d never experienced before.
 
 Besides just syntax, I’m interested in different kinds of notation humans have invented, such as [writing in general](http://subterraneanpress.com/magazine/fall_2013/the_truth_of_fact_the_truth_of_feeling_by_ted_chiang), [Roman numerals vs. Arabic numerals](https://gist.github.com/hypotext/241a978f795405ee34be), [bra-ket notation](http://www.physics.umd.edu/courses/Phys374/fall04/files/DiracNotation.pdf), [functional composition in math](http://www.infoq.com/presentations/Expression-of-Ideas), and [juggling notation](http://relprime.com/theunexpected/). 
 
