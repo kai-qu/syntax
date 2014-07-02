@@ -2,7 +2,7 @@
 
 I recently wrote some code that would remove non-alphabetical characters from plaintext. It was only about 30 lines of code, but the results surprised me.
 
-#### The code run on English prose:
+#### The code run on English prose
 
 <img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/whydoi.png" width="400" >
 
@@ -16,7 +16,7 @@ I like these pictures because I’m interested in mapping the silences in natura
 
 This reminds me a lot of the paper rolls and [metal disks](https://www.flickr.com/photos/zerberus1970/8486268787/) on which music was originally transcribed for music boxes. Sound through absence.
 
-#### The code run on code:
+#### The code run on code
 
 <img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/evolutionlisp.png" width="400" >
 
@@ -38,8 +38,7 @@ I’m interested in the exotic kinds of notation that we define for abstractions
   
 Do people have unique syntactical signatures in various natural and symbolic languages? Can you track someone by her semicolons?
 
-Process
--------
+#### Process
 
 ![](https://raw.githubusercontent.com/hypotext/syntax/master/images/blackboard1.jpg)
 
@@ -54,8 +53,7 @@ Besides just syntax, I’m interested in different kinds of notation humans have
 
 I guess if you wanted to replicate this process, you could think about the invisible parts of the media that you work in and how they interact with human design. :-)
 
-Tools used:
-----------
+#### Tools used
 
 Haskell language, Haskell compiler (GHC), emacs, Markdown, LaTeX, git, fish shell, chalkboard. (Lots of text editors!)
 
