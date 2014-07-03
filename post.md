@@ -1,6 +1,6 @@
 ##Punctuation remarks
 
-I recently wrote some code that would remove non-alphabetical characters from plaintext. It was only about 30 lines of code, but the results surprised me.
+I recently wrote some code that would remove non-alphabetical characters from plaintext. It was only about 30 lines of code, but the results surprised me. (If you're reading this in _Method & Apparatus_, check out the formatted version [here](https://github.com/hypotext/syntax/blob/master/post.md).)
 
 #### The code run on English prose
 
@@ -58,3 +58,5 @@ I guess if you wanted to replicate this process, you could think about the invis
 Haskell language, Haskell compiler (GHC), emacs, Markdown, LaTeX, git, fish shell, chalkboard. (Lots of text editors!)
 
 The code, original texts, and commit history can be found in the [GitHub repo](https://github.com/hypotext/syntax).
+
+Katherine ([@hypotext](twitter.com/hypotext))
