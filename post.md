@@ -1,4 +1,4 @@
-##Punctuation remarks
+# Punctuation remarks
 
 I recently wrote some code that would remove non-alphabetical characters from plaintext. It was only about 30 lines of code, but the results surprised me. (If you're reading this in _Method & Apparatus_, check out the formatted version [here](https://github.com/hypotext/syntax/blob/master/post.md).)
 
@@ -43,7 +43,7 @@ Do people have unique syntactical signatures in various natural and symbolic lan
 ![](https://raw.githubusercontent.com/hypotext/syntax/master/images/blackboard1.jpg)
 
 I was doing some linear algebra on a chalkboard with someone. Specifically, we were working
-with symmetric bilinear forms and inner products, which are very `<([bracket-heavy])>`. After they left, I wondered what would remain if I erased the symbols (e.g. x and y in `<x, y>`) on the chalkboard. This was in the beginning of May 2014. (I took a picture of it back then because I take pictures of everything.)
+with symmetric bilinear forms and inner products, which are very `<([bracket-heavy])>`. After they left, I wondered what would remain if I erased the symbols (e.g. x and y in `<x, y>`) on the chalkboard. This was in the beginning of May 2014. 
 
 <img src="https://raw.githubusercontent.com/hypotext/syntax/master/images/uncut_chelsey_minnis.png" width="525" >
 
@@ -51,11 +51,11 @@ I also came across an intriguing poem in a poetry class last winter: “Uncut”
 
 Besides just syntax, I’m interested in different kinds of notation humans have invented, such as [writing in general](http://subterraneanpress.com/magazine/fall_2013/the_truth_of_fact_the_truth_of_feeling_by_ted_chiang), [Roman numerals vs. Arabic numerals](https://gist.github.com/hypotext/241a978f795405ee34be), [bra-ket notation](http://www.physics.umd.edu/courses/Phys374/fall04/files/DiracNotation.pdf), [functional composition in math](http://www.infoq.com/presentations/Expression-of-Ideas), and [juggling notation](http://relprime.com/theunexpected/). 
 
-I guess if you wanted to replicate this process, you could think about the invisible parts of the media that you work in and how they interact with human design. :-)
+I guess if you wanted to replicate this process, you could think about the invisible parts of the media that you work in and how they interact with human design.
 
 #### Tools used
 
-Haskell language, Haskell compiler (GHC), emacs, Markdown, LaTeX, git, fish shell, chalkboard. (Lots of text editors!)
+Haskell language, Haskell compiler (GHC), emacs, Markdown, LaTeX, git, fish shell, chalkboard.
 
 The code, original texts, and commit history can be found in the [GitHub repo](https://github.com/hypotext/syntax).
 
